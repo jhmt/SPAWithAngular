@@ -3,6 +3,12 @@
     padding-bottom: 20px;
 }
 
+th {
+    font-size:medium;
+    width:140px;
+    background-color:lightblue;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
