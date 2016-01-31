@@ -1,2 +1,2 @@
 ﻿/// <reference path="../angular.js" />
-var module = angular.module("StudentApp", ["stucontrollers"]);
+var module = angular.module("StudentApp", ["stucontrollers", "sturesources"]);
