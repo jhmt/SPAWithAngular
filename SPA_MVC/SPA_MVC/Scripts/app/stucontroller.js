@@ -1,10 +1,17 @@
 ﻿/// <reference path="../angular.js" />
-var stucontrollers = angular.module("stucontrollers", []);
+var stucontrollers = angular.module("stucontrollers", ["ServiceModule"]);
 stucontrollers.controller("GetStudentsList",
-    function ($scope, $http) {
-    $http.get("/api/students").success(function (data) {
-        $scope.students = data;
-    })
+    function GetStudentsList($scope, myservice) {
+    //$http.get("/api/students").success(function (data) {
+        //    $scope.students = data;
+        loadRecords();
+        function loadRecords() {
+            var promiseGet = myservice.getStudents(); //The MEthod Call from service
+            promiseGet.then(function (pl) { $scope.students = pl.data },
+                  function (errorPl) {
+                      $log.error('failure loading Employee', errorPl);
+                  });
+        }
 });
 stucontrollers.controller("AddStudent", function ($scope, $http, $location) {
     $scope.student = {
