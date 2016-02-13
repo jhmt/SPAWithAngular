@@ -5,11 +5,13 @@
             <thead>
                 <tr>
                     <th>Title</th>
+                    <th>Authors</th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="book in books">
+                <tr ng-repeat="book in bookModels">
                     <td>{{book.title}}</td>
+                    <td>{{book.authorNames}}</td>
                 </tr>
             </tbody>
         </table>

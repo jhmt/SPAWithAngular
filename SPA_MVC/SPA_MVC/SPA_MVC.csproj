@@ -243,6 +243,7 @@
     <Content Include="Scripts\app\stuservices.js" />
     <Content Include="Scripts\booksApp\booksApp.js" />
     <Content Include="Scripts\booksApp\booksControllers.js" />
+    <Content Include="Scripts\booksApp\booksModels.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Model1.edmx">

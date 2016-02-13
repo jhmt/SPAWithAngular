@@ -1,6 +1,5 @@
 ﻿/// <reference path="../angular.js" />
-var module = angular.module("BooksApp",
-    ["ngRoute", "booksControllers"]);
+var module = angular.module("BooksApp", ["ngRoute", "booksControllers"]);
 
 module.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.
