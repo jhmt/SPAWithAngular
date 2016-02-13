@@ -241,6 +241,8 @@
     <Content Include="Scripts\app\stucontroller.js" />
     <Content Include="Scripts\app\sturesources.js" />
     <Content Include="Scripts\app\stuservices.js" />
+    <Content Include="Scripts\booksApp\booksApp.js" />
+    <Content Include="Scripts\booksApp\booksControllers.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Model1.edmx">
@@ -264,6 +266,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="templates\allstudents.html" />
     <Content Include="templates\addstudent.html" />
+    <Content Include="templates\books.html" />
     <Content Include="templates\home.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

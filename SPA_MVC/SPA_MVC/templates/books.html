@@ -1,0 +1,17 @@
+﻿<div>
+    <p>Books</p>
+    <div ng-controller="ListController">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="book in books">
+                    <td>{{book.title}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
